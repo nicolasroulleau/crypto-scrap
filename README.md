@@ -1,24 +1,7 @@
-# README
+# CRYPTO SCRAP APP	
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bienvenue sur mon app pour connaître le cours de crypto-monnaies en temps réem.
 
-Things you may want to cover:
+Pour y accéder c'est ici: https://stark-waters-61700.herokuapp.com/
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
