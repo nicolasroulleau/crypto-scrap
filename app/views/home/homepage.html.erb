@@ -1,0 +1,35 @@
+<div class="container">
+<div class="center-jumbotron">
+<%= form_for :money, url: root_path do |f| %>
+  <%= f.select :currency, @list_cur.sort!, {}, class: "btn btn-info dropdown-toggle"%>
+  <%= f.submit "Search" , class: "btn btn-sm btn-secondary"%>
+<% end %>
+</div>
+</div>
+<br>
+
+<div>
+<% if !$results.nil? %>
+    <%= $currency %> :
+    <%= $results[$currency]%>
+  <% end %>
+</div>
+<br>
+<br>
+<div>
+<% if !$total.nil? %>
+  <table class="table-striped">
+    <tr>
+      <th>Cryptomonnaie</th>
+      <th>Valeur</th>
+    </tr>
+  <% $total.each do |h| %>
+    <% h.each do |k,v| %>
+      <tr>
+         <td><%= k %></td>
+         <td><%= v %></td>
+      </tr>
+    <% end %>
+  <% end %>
+<% end %>
+</div>
